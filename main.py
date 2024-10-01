@@ -62,7 +62,7 @@ def splashIntoCode():
         splash_strings = original_data['splashes']
 
     with open(replacement_json_file, 'r') as rjf:
-        replacement_data = json.load(rjf)  # Corrected line
+        replacement_data = json.load(rjf)
         replacement_strings = replacement_data['splashes']
 
     with open(bin_file, 'rb+') as bf:
@@ -87,8 +87,20 @@ def splashIntoCode():
                 print(f"Error: String '{original_string}' not found in The code.bin File.")
     
     print("\nGenerating Game Patch... (This Can Take A While)")
-    os.system(f"{os.path.dirname(__file__)}\\data\\gc.exe create {codePath} {modifiedCodePath} {os.path.dirname(__file__)}\\code.ips > nul 2>&1")
-    print(f"Successfully Generated '{os.path.dirname(__file__)}\\code.ips' Game Patch.\n")
+    with open(codePath, 'rb') as f1:
+        data1 = f1.read()
+        with open(modifiedCodePath, 'rb') as f2:
+            data2 = f2.read()
+            f2.close()
+        f1.close()
+    
+    if data1 != data2:
+        os.system(f"{os.path.dirname(__file__)}\\data\\gc.exe create {codePath} {modifiedCodePath} {os.path.dirname(__file__)}\\code.ips > nul 2>&1")
+        print(f"Successfully Generated '{os.path.dirname(__file__)}\\code.ips' Game Patch.\n")
+    else:
+        print("Error: File was not Changed, cannot create Game Patch.\n")
+    
+    sys.exit(1)
 
 if os.path.basename(__file__) == 'main.py':
     copyCodeToModifiedFile()
