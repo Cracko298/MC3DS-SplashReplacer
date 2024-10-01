@@ -16,7 +16,7 @@
 - Run the Following Command: `python "main.py" --csplash-to-splash`.
 - Modify the Splash file that was generated here: `.\SplashReplacer\splashes.json`.
 - Then run the Following Command: `python "main.py" --splash-to-code`.
-- This will create a new Modified `code.bin` file and Create a Patch for the splashes in Code File (this may take a  while depending on how much you modified).
+- This will create a new Modified `code.bin` file and Create a Patch (`code.ips`) for the splashes in Code File (this may take a  while depending on how much you modified).
 ### Help Message:
 ```
     python "main.py" [flag]
