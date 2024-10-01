@@ -8,7 +8,7 @@
 - Windows Vista/7/8/10/11 (Does not work in VM's or on ARM Hardware Emulating Windows).
 
 ## Download:
-- Click [Here](https://github.com/Cracko298/MC3DS-SplashReplacer/releases/download/v1.0/SplashReplacer.zip) to Download.
+- Click [Here](https://github.com/Cracko298/MC3DS-SplashReplacer/releases/download/v1.1/SplashReplacer.zip) to Download.
 
 ## Usage:
 - Place `code.bin` rom Code File inside of `.\SplashReplacer\codebin\` sub-directory.
