@@ -32,4 +32,4 @@
 - If you get an error that says something like: "Python was not found", you may need to add it to PATH, or use `py` instead of `python` in your Commands.
 - If you get any errors saying the text was not found, this means that the Original Text is not Stored inside of the `code.bin` Code File.
 - `.\SplashReplacer` is the Directory you extracted the `*.zip` File too, plus the Application Directory. Example: `C:\Users\batch_t2amk73\Downloads\SplashReplacer\`.
-- After Completing/making your `code.ips` Game-Patch, you will need to put it into the Following Directory on 3DS: `sdmc:\luma\titles\mc3dsTitleID\`.
+- After Completing/making your `code.ips` Game-Patch, you will need to put it into the Following Directory on 3DS: `sdmc:\luma\titles\[mc3dsTitleID]\`.
