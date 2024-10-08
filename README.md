@@ -26,6 +26,7 @@
 
     Example Usage:
         python "main.py" -c2s
+        python "main.py" --csplash-to-splash
 ```
 
 ### Notice(s):
